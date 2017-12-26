@@ -1,0 +1,50 @@
+<div class="top-bar row">
+  <span>Third Line</span>
+  <span class="example-spacer"></span>
+  <button mat-button>Giỏ hàng</button>
+  <button mat-button>Đăng nhập</button>
+</div>
+<div class="header row">
+  <a routerLink="/home"><img src="http://wordpress.vinagecko.net/t/bonnie/wp-content/uploads/2015/07/logo.png" alt="logo"></a>
+  <span class="example-spacer"></span>
+  <div class="item-header row" fxHide [fxHide.gt-sm]="false">
+    <button mat-mini-fab color="primary"><mat-icon><i class="material-icons">local_shipping</i></mat-icon></button>
+    <div class="column">
+      <span>MIỄN PHÍ VẬN CHUYỂN</span>
+      <span>Miễn phí trên tất cả sản phẩm</span>
+    </div>
+  </div>
+  <span class="example-spacer"></span>
+  <div class="item-header row" fxHide [fxHide.gt-sm]="false">
+    <button mat-mini-fab color="primary"><mat-icon><i class="material-icons">laptop_mac</i></mat-icon></button>
+    <div class="column">
+      <span>ĐẶT HÀNG TRỰC TUYẾN</span>
+      <span>Phone : 01626254067</span>
+    </div>
+  </div>
+  <span class="example-spacer"></span>
+  <div class="item-header row" fxHide [fxHide.gt-sm]="false">
+    <button mat-mini-fab color="primary"><mat-icon><i class="material-icons">store</i></mat-icon></button>
+    <div class="column">
+      <span>MIỄN PHÍ VẬN CHUYỂN</span>
+      <span>Miễn phí trên tất cả sản phẩm</span>
+    </div>
+  </div>
+  <span class="example-spacer"></span>
+  <div class="item-header row" fxHide [fxHide.gt-sm]="false">
+    <button mat-mini-fab color="primary"><mat-icon><i class="material-icons">local_grocery_store</i></mat-icon></button>
+    <div class="column">
+      <span>GIỎ HÀNG</span>
+      <span>Total : {{total | number}}</span>
+    </div>
+  </div>
+</div>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Third Line</span>
+    <span class="example-spacer"></span>
+    <button mat-button>Giỏ hàng</button>
+    <button mat-button>Đăng nhập</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

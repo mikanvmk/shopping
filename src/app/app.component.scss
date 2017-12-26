@@ -1,0 +1,23 @@
+
+$default-padding : 10px;
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.top-bar {
+  background: #3f51b5;
+  padding: $default-padding/2 $default-padding;
+  color: white;
+}
+
+.header {
+  padding: $default-padding;
+  .item-header {
+
+  }
+}
