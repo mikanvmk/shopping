@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {Constant} from "./common/constant";
+import {Component, ViewChild} from '@angular/core';
+import {MatMenuTrigger} from "@angular/material";
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,15 @@ import {Constant} from "./common/constant";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
   total = 1000;
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
+  value = null;
 
-  public Constant = Constant;
+  onWindowScroll() {
+    console.log("scroll")
+    //we'll do some stuff here when the window is scrolled
+  }
+  search() {
+
+  }
 }

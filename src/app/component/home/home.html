@@ -1,0 +1,54 @@
+<div class="home">
+  <div class="header row">
+    <span class="example-spacer"></span>
+    <div class="banner">
+      <swiper [config]="config" #usefulSwiper>
+        <div class="swiper-wrapper">
+          <img class="swiper-slide" *ngFor="let image of images" [src]="image">
+        </div>
+        <div class="swiper-pagination"></div>
+        <div *ngIf="!Constant.checkMobile()" class="swiper-button-next"></div>
+        <div *ngIf="!Constant.checkMobile()" class="swiper-button-prev"></div>
+      </swiper>
+    </div>
+    <span class="example-spacer"></span>
+  </div>
+  <div class="content">
+    <div class="tab row">
+      <div class="change">
+        <button *ngIf="!Constant.checkMobile()" mat-button matSuffix mat-button aria-label="Clear">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </button>
+        <button *ngIf="!Constant.checkMobile()" mat-button matSuffix mat-button aria-label="Clear">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </button>
+      </div>
+      <mat-tab-group class="demo-tab-group">
+        <mat-tab label="Featured Products">
+          <div class="demo-tab-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+            Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+            In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+            feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+            orci enim rutrum enim, vel tempor sapien arcu a tellus.
+          </div>
+        </mat-tab>
+        <mat-tab label="Recent Products">
+          <!--<ng-template mat-tab-label>-->
+          <!--⭐-->
+          <!--</ng-template>-->
+          <div class="demo-tab-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+            Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+            In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+            feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+            orci enim rutrum enim, vel tempor sapien arcu a tellus.
+          </div>
+        </mat-tab>
+        <mat-tab label="Sale Products">
+          No content
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
