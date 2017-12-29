@@ -25,12 +25,18 @@
       </div>
       <mat-tab-group class="demo-tab-group">
         <mat-tab label="Featured Products">
-          <div class="demo-tab-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-            Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-            In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-            feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-            orci enim rutrum enim, vel tempor sapien arcu a tellus.
+          <div class="list-product">
+            <div class="item-product" *ngFor="let item of products">
+              <div class="img">
+                <img src="{{item?.url}}" alt="icon">
+              </div>
+              <div class="price">
+                {{item?.price | currency:'VND':'symbol':'.0-2'}}
+              </div>
+              <div class="content">
+                {{item?.name}}
+              </div>
+            </div>
           </div>
         </mat-tab>
         <mat-tab label="Recent Products">

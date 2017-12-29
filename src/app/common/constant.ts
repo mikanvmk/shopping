@@ -3,6 +3,8 @@ export class Constant {
   public static path_home = 'home';
   public static url_home = "/" + Constant.path_home;
 
+  public static icon_picture_default = "";
+
 
   public static checkMobile() {
     let check = false;

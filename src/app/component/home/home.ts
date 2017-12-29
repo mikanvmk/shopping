@@ -21,6 +21,14 @@ export class Home {
     'http://www.thotayboutique.com/wp-content/uploads/2017/05/tho-tay-khai-truong.jpg'
   ];
 
+  products :any[] = [
+    {
+      url : 'http://www.thotayboutique.com/wp-content/uploads/2017/05/Slider-ThoTay-01-1200.jpg',
+      name : "aaaa",
+      price:10000
+    }
+  ];
+
   config: SwiperOptions = {
     pagination: '.swiper-pagination',
     paginationClickable: true,
